@@ -131,3 +131,71 @@
     display: block;
     content: 'Returns';
 }
+
+
+.main-grid-container {
+    display: grid;
+    grid-template-areas: 
+        /* spc is space */
+        'space-right img img img desc desc desc space-left'
+        'space-right img img img desc desc desc space-left'
+        'space-right img img img desc desc desc space-left'
+        /* b-t is bought togather */
+        'space-right b-t b-t b-t b-t b-t b-t space-left'
+        'space-right items items items items items items space-left';
+}
+
+.grid-side-space {
+    grid-area: space-right;
+}
+
+.grid-side-space-right {
+    grid-area: space-left;
+}
+
+.product-imgs {
+    grid-area: img;
+}
+
+.product-description {
+    grid-area: desc;
+}
+
+.product-img ul {
+    padding: 0;
+    margin: 0;
+    display: flex;
+    width: 45px;
+    flex-direction: column;
+    list-style-type: none;
+    float: left;
+}
+
+.product-img ul li {
+    display: inline-block;
+    list-style-type: none;
+}
+
+.product-img ul li img{
+    width: 40px;
+    height: 40px;
+}
+
+
+.max-w-650 img{
+    width: 650px;
+    float: left;
+}
+
+.grid-side-space-right {
+    width: 250px;
+}
+
+.grid-side-space-left {
+    width: 250px;
+}
+
+.category {
+    margin-left: 250px;
+    margin-bottom: 15px;
+}
