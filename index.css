@@ -70,6 +70,7 @@
 .lower-nav {
     display: inline-block;
     list-style-type: none;
+    padding-bottom: 7px;
 }
 
 .lower-nav ul {
@@ -204,6 +205,25 @@
 
 .b-t{
     margin-top: 10px;
-    border-top: 1px solid #f1f1f1;
+    border-top: 2px solid #f1f1f1;
     grid-area: b-t;
+}
+
+.items {
+    margin-top: 10px;
+    border-top: 2px solid #f1f1f1;
+    grid-area: items;
+}
+
+.text-alert{
+    color: var(--text-alert-color);
+}
+
+.more-item-container {
+    display: flex;
+    justify-content: space-evenly;
+}
+
+.arrow {    
+    margin-top: 65px;
 }
