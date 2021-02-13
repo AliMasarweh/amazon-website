@@ -23,10 +23,62 @@
 }
 
 .amazon-logo img {
-    width: 113px; 
+    width: 115px; 
     height: 75px;
+    float: left;
 }
 
-.delivery-location {
+.amazon-logo {
+    grid-column: 1 /span 3;
+}
 
+
+.delivery-location {
+    display: inline-block;
+    width: 90px;
+    padding: 20px 0;
+    grid-column: 4 /span 3;
+}
+
+.delivery-location span:first-child {
+    display: inline-block;
+    padding-left: 15px;
+}
+
+.upper-nav div{
+    display: inline-block;
+}
+
+.grid-container {
+    display: grid;
+    grid-template-columns: repeat(51, 1fr);
+}
+
+
+.search {
+    grid-column: 7 /span 35;
+}
+
+.search input {
+    margin: 20px 0;
+    padding: 15px 0;
+    border-radius: 10px;
+    width: 95%;
+}
+
+.lower-nav {
+    display: inline-block;
+    list-style-type: none;
+}
+
+.lower-nav li {
+    display: inline-block;
+    list-style-type: none;
+}
+
+.search-aside{
+    grid-column: 42 /span 10;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
 }
