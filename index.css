@@ -1,0 +1,32 @@
+:root {
+    --pirmary-bg-color: #131921;
+    --secondary-bg-color: #232F3E;
+
+    --alert-bg-color: #F08804;
+    --btn-alert-bg-color: #F0C457;
+
+    --text-alert-color: #F69931;;
+
+    --link-color: #007185;
+    --link-hover-color: #C7511F;
+
+    --price-color: #B12704;
+    --amazon-choice-bg-color: #232F3E;
+}
+
+.bg-primary {
+    background-color: var(--pirmary-bg-color);
+} 
+
+.text-primary {
+    color: white;
+}
+
+.amazon-logo img {
+    width: 113px; 
+    height: 75px;
+}
+
+.delivery-location {
+
+}
