@@ -4,6 +4,7 @@
 
     --alert-bg-color: #F08804;
     --btn-alert-bg-color: #F0C457;
+    --btn-secondary-bg-color: #F1F1F1;
 
     --text-alert-color: #F69931;;
 
@@ -137,19 +138,19 @@
     display: grid;
     grid-template-areas: 
         /* spc is space */
-        'space-right img img img desc desc desc space-left'
-        'space-right img img img desc desc desc space-left'
-        'space-right img img img desc desc desc space-left'
+        'space-left img img img desc desc desc space-right'
+        'space-left img img img desc desc desc space-right'
+        'space-left img img img desc desc desc space-right'
         /* b-t is bought togather */
-        'space-right b-t b-t b-t b-t b-t b-t space-left'
-        'space-right items items items items items items space-left';
-}
-
-.grid-side-space {
-    grid-area: space-right;
+        'space-left b-t b-t b-t b-t b-t b-t space-right'
+        'space-left items items items items items items space-right';
 }
 
 .grid-side-space-right {
+    grid-area: space-right;
+}
+
+.grid-side-space-left {
     grid-area: space-left;
 }
 
@@ -195,7 +196,14 @@
     width: 250px;
 }
 
+
 .category {
     margin-left: 250px;
     margin-bottom: 15px;
+}
+
+.b-t{
+    margin-top: 10px;
+    border-top: 1px solid #f1f1f1;
+    grid-area: b-t;
 }
